@@ -1,0 +1,6 @@
+# Python core Lidar processing dependencies
+numpy
+opencv-python
+open3d
+pyserial
+matplotlib
