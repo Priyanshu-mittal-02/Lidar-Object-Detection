@@ -3,6 +3,16 @@
 ## Overview
 This project is a Python-based solution for Automatic Vehicle Classification (AVC) and 3D vehicle profiling using a 2D LiDAR sensor. The system captures raw LiDAR scans over a serial connection, processes the data in real-time, and stacks 2D scans over time (accounting for vehicle speed) to generate comprehensive 3D point cloud (`.pcd`) models of passing vehicles.
 
+## Real-World Application & Impact
+While LiDAR is often associated with self-driving cars, this project specifically solves problems in **Intelligent Transportation Systems (ITS)** and **Smart City Infrastructure**. 
+
+To a non-technical user, this project acts as a highly accurate, automated "digital toll-booth operator". Its practical uses include:
+- **Automated Toll Billing:** Accurately distinguishing between a small car, an SUV, and a commercial truck so that toll plazas can charge the correct fee without manual human inspection.
+- **Traffic Monitoring & Urban Planning:** Helping city planners count and categorize road usage (e.g., how many heavy trucks use a specific bridge daily).
+- **Border & Security Checkpoints:** Providing automated 3D dimensional scans of vehicles to detect anomalies (like hidden compartments or oversized cargo) without stopping traffic flow.
+
+By replacing traditional manual auditing or error-prone camera setups with precise laser scanning (LiDAR), this software reduces human error, cuts labor costs, and speeds up traffic flow.
+
 ## Key Features
 - **Real-Time Data Acquisition:** Reads LiDAR data streams directly via a high-speed serial connection (Baud: 921600).
 - **Dynamic Background Calibration:** Learns the background/zero-plane over a series of initial frames (e.g., empty road) to robustly isolate passing vehicles.
